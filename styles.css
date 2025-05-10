@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Fixed Navigation */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #6200EA;
+  color: white;
+  z-index: 999;
+  padding: 15px 0;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#navbar.scrolled {
+  background-color: #3700B3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #FFD54F;
+  color: #000;
+}
+
+/* Page Sections */
+.section {
+  height: 100vh;
+  padding: 100px 40px 40px;
+  text-align: center;
+}
+
+#home { background-color: #FFECB3; }
+#about { background-color: #C8E6C9; }
+#projects { background-color: #BBDEFB; }
+#contact { background-color: #FFCDD2; }
+
+.section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
